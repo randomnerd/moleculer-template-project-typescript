@@ -18,7 +18,7 @@
 To install use the [moleculer-cli](https://github.com/moleculerjs/moleculer-cli) tool.
 
 ```bash
-$ moleculer init project-typescript my-project
+$ moleculer init randomnerd/moleculer-template-project-typescript my-project
 ```
 
 ## Prompts
