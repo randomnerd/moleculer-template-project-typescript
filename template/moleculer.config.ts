@@ -110,7 +110,7 @@ const brokerConfig: BrokerOptions = {
 		check: (err: Errors.MoleculerRetryableError) => err && err.code >= 500,
 	},
 
-    // Settings of bulkhead feature. More info: https://moleculer.services/docs/0.13/fault-tolerance.html#Bulkhead
+        // Settings of bulkhead feature. More info: https://moleculer.services/docs/0.13/fault-tolerance.html#Bulkhead
 	bulkhead: {
 		// Enable feature.
 		enabled: false,
@@ -121,14 +121,16 @@ const brokerConfig: BrokerOptions = {
 	},
 
 	// Enable parameters validation. More info: https://moleculer.services/docs/0.13/validating.html
-	validation: true,
+        // FIXME: incompatible with 0.14
+	// validation: true,
 	// Custom Validator class for validation.
 	validator: null,
 
 	// Enable metrics function. More info: https://moleculer.services/docs/0.13/metrics.html
 	metrics: false,
 	// Rate of metrics calls. 1 means to measure every request, 0 means to measure nothing.
-	metricsRate: 1,
+        // FIXME: incompatible with 0.14
+	// metricsRate: 1,
 
 	// Register internal services ("$node"). More info: https://moleculer.services/docs/0.13/services.html#Internal-services
 	internalServices: true,
